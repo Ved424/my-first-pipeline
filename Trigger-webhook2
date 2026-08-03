@@ -1,3 +1,3 @@
 Automated build trigger
 Hi Configured master-slave setup
-pipeline should run on slave01
+configured pipeline should run on slave01
