@@ -1,5 +1,24 @@
-Building automation using webhook settings.
-Enable master slave setup
-setup master slave
-Runn on slave
-label is 'slave'
+Slave:
+---- add user slave using root --- 
+sudo su - 
+user add -m slave
+--- Generate key pair under /home/slave/.ssh  ---
+mkdir .ssh
+ssh-keygen
+copy id-e25569.pub ---> authorized_keys
+chmod 700 auhtorized_keys
+
+copy  content of id_e25569 on jenkins dashboard under the credntial section
+
+
+Master
+
+switch to jenkins user --- sudo su - jenkins
+create dir .ssh under /var/lib/jenkins/
+chown jenkins:jenkins .ssh
+copy slave ip addr to known_hosts under .ssh ---> ssh-keyscan -H slave_Ipaddr >> /var/lib/jenkins/.ssh/known_hosts
+chmod 700 known_hosts
+
+
+
+
