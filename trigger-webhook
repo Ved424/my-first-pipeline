@@ -1,3 +1,5 @@
+Jenkins Master-Slave setup
+
 Slave:
 ---- add user slave using root --- 
 sudo su - 
