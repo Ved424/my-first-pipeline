@@ -1,5 +1,5 @@
 Automated build trigger
 Hi Configured master-slave setup
 Configured pipeline should run on slave
-Configured webhook
+Configured webhook --- commit build triggers
 
